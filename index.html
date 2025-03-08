@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <title>Solid App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>武田塾</title>
+  <link rel="stylesheet" href="styles.css"> <!-- 外部CSSのリンク -->
+  <style>
+    /* ここにスタイルを書いてカスタマイズできます */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007BFF;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .main-content {
+      padding: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
 
-    <script src="/src/index.tsx" type="module"></script>
-  </body>
-　テスト01
+  <!-- ヘッダー -->
+  <header>
+    <h1>武田塾</h1>
+    <p>全国の学習塾、予備校なら武田塾</p>
+  </header>
+
+  <!-- ナビゲーションバー -->
+  <nav>
+    <a href="#about">会社概要</a>
+    <a href="#services">サービス紹介</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <div class="main-content">
+    <section id="about">
+      <h2>会社概要</h2>
+      <p>武田塾は、個別指導を通じて自分のペースで学べる学習塾です。</p>
+    </section>
+
+    <section id="services">
+      <h2>サービス紹介</h2>
+      <ul>
+        <li>個別指導</li>
+        <li>自習サポート</li>
+        <li>オンライン学習</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+      <p>ご質問やご相談がある場合は、お気軽にお問い合わせください。</p>
+    </section>
+  </div>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2025 武田塾. All Rights Reserved.</p>
+  </footer>
+
+</body>
 </html>
